@@ -1,7 +1,9 @@
-# 📑 Script Config
+# Formatting Examples
+
+## 📑 Script Config
 
 {% hint style="info" %}
-How to structure your Nousigi Kaitun config file.
+How to structure your config file.
 
 {% code title="Explanation" %}
 ```lua
@@ -26,10 +28,7 @@ How to structure your Nousigi Kaitun config file.
 Finish every entry with a comma (`,`) to avoid syntax errors.
 {% endhint %}
 
-For complete examples of valid and invalid structures, see the [Formatting Examples](examples.md) page.
-
-
-# Formatting Examples
+## Formatting Examples
 
 Use these samples to compare your configuration against known good and bad patterns.
 

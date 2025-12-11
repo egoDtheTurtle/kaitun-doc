@@ -1,7 +1,8 @@
-# Overall config
+# Config
+
+The default Steal a Brainrot config:
 
 ```lua
--- default config
 getgenv().Config = {
     ["Gameplay"] = {
         ["Server Type"] = "Private",
