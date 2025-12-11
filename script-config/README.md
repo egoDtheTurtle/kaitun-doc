@@ -1,7 +1,7 @@
 # 📑 Script Config
 
 {% hint style="info" %}
-Here's how script config works.
+How to structure your Nousigi Kaitun config file.
 
 {% code title="Explanation" %}
 ```lua
@@ -23,7 +23,7 @@ Here's how script config works.
 {% endhint %}
 
 {% hint style="warning" %}
-Make sure the config always have the comma (`,`) at the end of it.
+Finish every entry with a comma (`,`) to avoid syntax errors.
 {% endhint %}
 
 {% hint style="success" %}
@@ -31,18 +31,20 @@ Good example
 
 ```lua
 -- bool
-["Raid if Maxed Blox Fruit"] = true,
--- string
-["Farm method after maxed"] = "Raid Boss Farm - Cake Prince Farm",
--- arg
 ["Performance"] = {
-    ["Hide Map"] = true,
     ["Black Screen"] = true,
-    ["Lock FPS"] = 30,
 },
-["Blox Fruit Sniper"] = {
-    "Dough-Dough",
-    "Leopard-Leopard",
+-- string
+["Gameplay"] = {
+    ["Server Type"] = "Private",
+},
+-- arg
+["Misc"] = {
+    ["Ignore Secret"] = {
+        ["La Vacca Saturno Saturnita"] = {
+            "All",
+        },
+    },
 },
 ```
 {% endhint %}
@@ -52,18 +54,19 @@ Bad example
 
 ```lua
 -- bool
-["Raid if Maxed Blox Fruit"] = true -- missing comma (,) at the end
--- string
-["Farm method after maxed"] = Raid Boss Farm - Cake Prince Farm, -- a string must inside " or '
--- arg
 ["Performance"] = {
-    ["Hide Map"] = true -- missing comma (,) at the end
     ["Black Screen"] = true -- missing comma (,) at the end
-    ["Lock FPS"] = 30,
 },
-["Blox Fruit Sniper"] = {
-    "Dough-Dough", -- missing comma (,) at the end
-    Leopard-Leopard, -- a string must inside " or '
+-- string
+["Gameplay"] = {
+    ["Server Type"] = Private, -- a string must be inside " or '
+},
+-- arg
+["Misc"] = {
+    ["Ignore Secret"] = {
+        "La Vacca Saturno Saturnita" -- missing comma (,) at the end
+        ["All"], -- bad syntax
+    },
 },
 ```
 {% endhint %}

@@ -1,13 +1,13 @@
-# 🤑 Dit Blox Fruits Documentation
+# 😼 Nousigi Kaitun Documentation
 
 {% hint style="danger" %}
-This is Dit Blox Fruit config documentation.\
-Only buyers is allowed to access, please leave this page if you are not them.
+Private documentation for Nousigi Kaitun automation scripts.\
+Leave immediately if you are not part of the approved user list.
 {% endhint %}
 
+### Where to Start
 
+Head over to [Script Config](script-config/) for formatting rules and the full default configuration.
 
-### Where to start
-
-Check out [Script Config](script-config/) for config format and overall configs.
+Browse the [Nousigi Kaitun Config Reference](nousigi-kaitun-documentation/) for detailed explanations of every option.
 
