@@ -1,6 +1,7 @@
 # Table of contents
 
-* [🧠 Steal a Brainrot](README.md)
+* [About](README.md)
+* [🧠 Steal a Brainrot](<README (1).md>)
   * [Config Reference](nousigi-kaitun-documentation/README.md)
     * [Gameplay](nousigi-kaitun-documentation/gameplay.md)
     * [Misc](nousigi-kaitun-documentation/misc.md)

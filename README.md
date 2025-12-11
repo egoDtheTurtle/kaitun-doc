@@ -1,7 +1,10 @@
-# 🧠 Steal a Brainrot
+---
+icon: info
+---
 
-### Where to Start
+# About
 
-Head over to [Config](readme/config/) for formatting rules and the full default configuration.
+This is a nousigi hub's document for kaitun script
 
-Browse the [Config Reference](nousigi-kaitun-documentation/) for detailed explanations of every option.
+Offcial discord: [discord.gg/nousigi](https://discord.gg/h5QCqNVcz5)\
+Kaitun discord: [discord.gg/h5QCqNVcz5](https://discord.gg/h5QCqNVcz5)
