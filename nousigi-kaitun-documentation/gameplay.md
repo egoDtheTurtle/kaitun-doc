@@ -1,26 +1,22 @@
-# Gameplay Options
+# Gameplay
 
-The `Gameplay` table shapes how Nousigi Kaitun behaves in different server environments.
+The `Gameplay` table shapes how script behaves in different server environments.
 
 ## Server Type
 
-Accepted values: `Public`, `Private`, `Private (Free)`.
+Accepted values: `Public`, `Private.`
 
 ### Public
 
-When set to `Public`, Nousigi Kaitun assumes you are in a shared lobby and enables safety routines:
+When set to `Public`, script assumes you are in a shared lobby and enables safety routines:
 
-- Repeatedly auctions animals you try to purchase so other players cannot snipe them.
-- Frequently taps the lock button on your base.
-- Attacks thieves attempting to steal animals from your base.
+* Repeatedly auctions animals you try to purchase so other players cannot snipe them.
+* Frequently taps the lock button on your base.
+* Attacks thieves attempting to steal animals from your base.
 
 ### Private
 
 When set to `Private`, the script expects you to be inside a private server that you control. If it detects a public server, it will kick you to prevent unintended purchases or resets.
-
-### Private (Free)
-
-Use this mode when you join a Nousigi-managed private instance. Behavior matches `Private`, but it allows the script to supply the server slot.
 
 ## Collect Cash Cap (Private)
 

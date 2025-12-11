@@ -1,4 +1,4 @@
-# Misc Options
+# Misc
 
 The `Misc` table contains protective routines and quality-of-life actions.
 
@@ -12,10 +12,10 @@ Tracks the average frame rate across the last 60 seconds. If it remains below th
 
 ## Max Rebirth
 
-Sets an upper limit for automated rebirths. When your rebirth count is **equal to or higher** than this value, Nousigi Kaitun stops rebirthing. The script never rebirths if a generation `10m+` animal is active in your base.
+Sets an upper limit for automated rebirths. When your rebirth count is **equal to or higher** than this value, script stops rebirthing. The script never rebirths if a generation `10m+` animal is active in your base.
 
-- Set to `-1` to disable rebirths entirely.
-- Set to `0` to always rebirth up to the current maximum.
+* Set to `-1` to disable rebirths entirely.
+* Set to `0` to always rebirth up to the current maximum.
 
 ```lua
 ["Max Rebirth"] = 5,
@@ -41,15 +41,15 @@ Treats the listed secret animals as regular animals. They can be sold if the bas
 },
 ```
 
-- `"La Vacca Saturno Saturnita"` is the animal name.
-- Mutation values include `Normal`, `Gold`, `Diamond`, `Rainbow`, etc. Use `"All"` to cover every mutation.
+* `"La Vacca Saturno Saturnita"` is the animal name.
+* Mutation values include `Normal`, `Gold`, `Diamond`, `Rainbow`, etc. Use `"All"` to cover every mutation.
 
 ## Auto Fuse
 
 Add this key inside the `Misc` table when you need it. Automatically finds the lowest generation secret animal in your base and sends it to the Fuse machine.
 
-- `Enable`: toggles the automaton on or off.
-- `Ignore`: list of animals that should never be fused, with their mutation filters.
+* `Enable`: toggles the automaton on or off.
+* `Ignore`: list of animals that should never be fused, with their mutation filters.
 
 ```lua
 ["Auto Fuse"] = {
