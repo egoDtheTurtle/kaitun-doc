@@ -66,7 +66,7 @@ Treats the listed secret animals as regular animals. They can be sold if the bas
 
 ## Auto Fuse
 
-Automatically finds the listed secret animal in your base and sends it to the Fuse machine. While getting animals to fuse, if a [Rare Animal Generation](misc.md#rare-animal-generation) spawned, script will cancel the current task and go purchase it.
+Automatically finds the listed secret animal in your base and sends it to the Fuse machine, only start fusing if reached [Collect Cash Cap](gameplay.md#collect-cash-cap-private). While getting animals to fuse, if a [Rare Animal Generation](misc.md#rare-animal-generation) spawned, script will cancel the current task and go purchase it.
 
 * `Enable`: toggles the automaton on or off.
 * `Fuse Animal`: list of animals that should be fused, with their mutation filters like the [Ignore Secret](misc.md#ignore-secret) config above, will priority fusing the lowest generation animals first.
