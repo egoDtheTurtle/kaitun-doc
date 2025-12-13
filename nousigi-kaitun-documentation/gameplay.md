@@ -44,5 +44,6 @@ Caps how aggressively the script re-bids during auctions in public servers. The 
 
 Adds a delay (in seconds) before the script confirms the base lock. This gives other automated steps time to finish before the base is sealed.
 
-<pre class="language-lua"><code class="lang-lua"><strong>["Lock Base Extra Time"] = 5,
-</strong></code></pre>
+```lua
+["Lock Base Extra Time"] = 5,
+```
