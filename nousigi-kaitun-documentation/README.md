@@ -9,4 +9,4 @@ Welcome to the preview documentation for the Nousigi Kaitun automation suite. Ea
 * [Performance](performance.md)
 * [Webhook](webhook.md)
 
-Need the raw template? See the [Default Config](../readme/config/).
+Need the raw template? See the [Default Config](../readme/script-config/).

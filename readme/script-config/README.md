@@ -1,4 +1,4 @@
-# Config
+# Script Config
 
 The default Steal a Brainrot config:
 
@@ -16,7 +16,12 @@ getgenv().Config = {
         ["Kick if Ping above"] = 750,
         ["Kick if FPS below"] = 5,
         ["Max Rebirth"] = 0,
+        ["Rare Animal Generation"] = "10M",
         ["Ignore Secret"] = {},
+        ["Auto Fuse"] = {
+            ["Enable"] = false,
+            ["Fuse Animal"] = {},
+        },
         ["Buy Lucky Block"] = {},
         ["Open Lucky Block"] = {},
     },
@@ -29,7 +34,6 @@ getgenv().Config = {
         ["Ignore Notify"] = {},
     },
 }
---
 ```
 
 Use these defaults as a base before applying your own overrides and deployment keys.

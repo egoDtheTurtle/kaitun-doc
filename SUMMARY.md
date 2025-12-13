@@ -7,5 +7,5 @@
     * [Misc](nousigi-kaitun-documentation/misc.md)
     * [Performance](nousigi-kaitun-documentation/performance.md)
     * [Webhook](nousigi-kaitun-documentation/webhook.md)
-  * [Config](readme/config/README.md)
-    * [Formatting Examples](readme/config/examples.md)
+  * [Script Config](readme/script-config/README.md)
+    * [Formatting Examples](readme/script-config/examples.md)

@@ -6,9 +6,17 @@ The `Misc` table contains protective routines and quality-of-life actions.
 
 Monitors average network latency over 30 seconds. If the ping stays above the configured value, the script force-kicks the player to avoid mis-buying animals while lagging.
 
+```lua
+["Kick if Ping above"] = 750,
+```
+
 ## Kick if FPS below
 
 Tracks the average frame rate across the last 60 seconds. If it remains below the configured threshold for over 30 seconds, the script kicks the player. Low FPS reduces input accuracy and can trigger bad purchases.
+
+```lua
+["Kick if FPS below"] = 5,
+```
 
 ## Max Rebirth
 
@@ -25,7 +33,11 @@ In the example above, rebirthing stops after reaching 5 rebirths.
 
 ## Rare Animal Generation
 
-Add this key inside the `Misc` table when you need it. Defines the minimum generation-per-second value that marks an animal as **rare**. Rare animals are never sold and block rebirths while they stay in your base. Accepts shorthand values like `10B`, `100.5M`, or `1.5T`.
+Add this key inside the `Misc` table when you need it. Defines the minimum generation-per-second value that marks an animal as **rare**. Rare animals are never sold and stop rebirths while they stay in your base. Accepts shorthand values like `10B`, `100.5M`, or `1.5T`.
+
+```lua
+["Rare Animal Generation"] = "10M",
+```
 
 ## Ignore Secret
 
@@ -46,15 +58,10 @@ Treats the listed secret animals as regular animals. They can be sold if the bas
 
 ## Auto Fuse
 
-Add this key inside the `Misc` table when you need it. Automatically finds the lowest generation secret animal in your base and sends it to the Fuse machine.
-
-* `Enable`: toggles the automaton on or off.
-* `Ignore`: list of animals that should never be fused, with their mutation filters.
-
 ```lua
 ["Auto Fuse"] = {
     ["Enable"] = true,
-    ["Ignore"] = {
+    ["Fuse Animal"] = {
         ["La Vacca Saturno Saturnita"] = {
             "All",
         },
@@ -62,9 +69,31 @@ Add this key inside the `Misc` table when you need it. Automatically finds the l
 },
 ```
 
+Add this key inside the `Misc` table when you need it. Automatically finds the listed secret animal in your base and sends it to the Fuse machine.
+
+* `Enable`: toggles the automaton on or off.
+* `Fuse Animal`: list of animals that should be fused, with their mutation filters like the [Ignore Secret](misc.md#ignore-secret) config above, will priority fusing the lowest generation animals first.
+
+```lua
+["Auto Fuse"] = {
+    ["Enable"] = true,
+    ["Fuse Animal"] = {
+        ["La Vacca Saturno Saturnita"] = {
+                "All",
+        },
+    },
+},
+```
+
+The `Fuse Animal` can also be `"All"` to make it fuse every animals in your base, will fuse the lowest generation animals first
+
+```lua
+["Fuse Animal"] = "All",
+```
+
 ## Buy Lucky Block
 
-Prioritizes purchasing the listed Lucky Blocks. The script will sell regular animals (never ones that match `Rare Animal Generation`) if necessary to free space.
+Prioritizes purchasing the listed Lucky Blocks. The script will sell regular animals (never ones that match [Rare Animal Generation](misc.md#rare-animal-generation)) if necessary to free space.
 
 ```lua
 ["Buy Lucky Block"] = {
@@ -72,20 +101,20 @@ Prioritizes purchasing the listed Lucky Blocks. The script will sell regular ani
 },
 ```
 
-Available names:
+Available names (not 100% real time up-to-dated):
 
 ```
-"Los Lucky Blocks"
-"Taco Lucky Block"
-"Admin Lucky Block"
-"Secret Lucky Block"
-"Brainrot God Lucky Block"
-"Mythic Lucky Block"
-"Spooky Lucky Block"
+"Los Lucky Blocks",
+"Taco Lucky Block",
+"Admin Lucky Block",
+"Secret Lucky Block",
+"Brainrot God Lucky Block",
+"Mythic Lucky Block",
+"Spooky Lucky Block",
 ```
 
 Set to `"All"` to buy every Lucky Block except Mythic and Brainrot God.
 
 ## Open Lucky Block
 
-Opens the Lucky Blocks you list. Names must match exactly what you configured inside `Buy Lucky Block`.
+Opens the Lucky Blocks you list. Names must match exactly what you configured inside [Buy Lucky Block](misc.md#buy-lucky-block) (set the config just like the one above).

@@ -40,10 +40,17 @@ Use these samples to compare your configuration against known good and bad patte
 ["Performance"] = {
     ["Black Screen"] = true,
 },
+
 -- string
 ["Gameplay"] = {
     ["Server Type"] = "Private",
 },
+
+-- number
+["Performance"] = {
+    ["FPS Cap"] = 10,
+},
+
 -- arg
 ["Misc"] = {
     ["Ignore Secret"] = {
@@ -51,6 +58,9 @@ Use these samples to compare your configuration against known good and bad patte
             "All",
         },
     },
+},
+["Buy Lucky Block"] = {
+    "Secret Lucky Block",
 },
 ```
 {% endhint %}
@@ -63,10 +73,17 @@ Use these samples to compare your configuration against known good and bad patte
 ["Performance"] = {
     ["Black Screen"] = true -- missing comma (,) at the end
 },
+
 -- string
 ["Gameplay"] = {
     ["Server Type"] = Private, -- a string must be inside " or '
 },
+
+-- number
+["Performance"] = {
+    ["FPS Cap"] = "10" -- a number shouldn't be inside " or '
+},
+
 -- arg
 ["Misc"] = {
     ["Ignore Secret"] = {
@@ -74,5 +91,14 @@ Use these samples to compare your configuration against known good and bad patte
         ["All"], -- bad syntax
     },
 },
+["Misc"] = {
+    ["Ignore Secret"] = {
+        "La Vacca Saturno Saturnita", -- missing mutation type
+    },
+},
+["Buy Lucky Block"] = "Secret Lucky Block" -- arg type must be inside {}
+["Buy Lucky Block"] = {
+    Secret Lucky Block, -- string must be inside " or '
+}
 ```
 {% endhint %}
