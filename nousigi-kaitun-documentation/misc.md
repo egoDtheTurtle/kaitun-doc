@@ -85,7 +85,7 @@ Add this key inside the `Misc` table when you need it. Automatically finds the l
 },
 ```
 
-The `Fuse Animal` can also be `"All"` to make it fuse every animals in your base, will fuse the lowest generation animals first
+The `Fuse Animal` can also be `"All"` to make it fuse every animals in your base, but not the [Rare Animal Generation](misc.md#rare-animal-generation). Will fuse the lowest generation animals first.
 
 ```lua
 ["Fuse Animal"] = "All",
