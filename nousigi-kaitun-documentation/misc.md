@@ -39,6 +39,14 @@ Defines the minimum generation-per-second value that marks an animal as **rare**
 ["Rare Animal Generation"] = "10M",
 ```
 
+## Only keep Secret if Cash Cap
+
+Once you reached the [Collect Cash Cap](gameplay.md#collect-cash-cap-private) the script will sell the leftover animals that is not Secret/OG.
+
+```lua
+["Only keep Secret if Cash Cap"] = true,
+```
+
 ## Ignore Secret
 
 Treats the listed secret animals as regular animals. They can be sold if the base is full, and the Black Screen color is unaffected. Configure entries with the animal name and mutation types you want to treat as normal.

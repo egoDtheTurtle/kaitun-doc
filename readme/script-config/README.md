@@ -17,6 +17,7 @@ getgenv().Config = {
         ["Kick if FPS below"] = 5,
         ["Max Rebirth"] = 0,
         ["Rare Animal Generation"] = "10M",
+        ["Only keep Secret if Cash Cap"] = true,
         ["Ignore Secret"] = {},
         ["Auto Fuse"] = {
             ["Enable"] = false,
