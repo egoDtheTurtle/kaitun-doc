@@ -33,7 +33,7 @@ In the example above, rebirthing stops after reaching 5 rebirths.
 
 ## Rare Animal Generation
 
-Add this key inside the `Misc` table when you need it. Defines the minimum generation-per-second value that marks an animal as **rare**. Rare animals are never sold and stop rebirths while they stay in your base. Accepts shorthand values like `10B`, `100.5M`, or `1.5T`.
+Defines the minimum generation-per-second value that marks an animal as **rare**. Rare animals are never sold and stop rebirths while they stay in your base. Accepts shorthand values like `10B`, `100.5M`, or `1.5T`.
 
 ```lua
 ["Rare Animal Generation"] = "10M",
@@ -58,18 +58,7 @@ Treats the listed secret animals as regular animals. They can be sold if the bas
 
 ## Auto Fuse
 
-```lua
-["Auto Fuse"] = {
-    ["Enable"] = true,
-    ["Fuse Animal"] = {
-        ["La Vacca Saturno Saturnita"] = {
-            "All",
-        },
-    },
-},
-```
-
-Add this key inside the `Misc` table when you need it. Automatically finds the listed secret animal in your base and sends it to the Fuse machine.
+Automatically finds the listed secret animal in your base and sends it to the Fuse machine. While getting animals to fuse, if a [Rare Animal Generation](misc.md#rare-animal-generation) spawned, script will cancel the current task and go purchase it.
 
 * `Enable`: toggles the automaton on or off.
 * `Fuse Animal`: list of animals that should be fused, with their mutation filters like the [Ignore Secret](misc.md#ignore-secret) config above, will priority fusing the lowest generation animals first.
