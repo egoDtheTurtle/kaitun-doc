@@ -112,6 +112,16 @@ Available names (not 100% real time up-to-dated):
 
 Set to `"All"` to buy every Lucky Block except Mythic and Brainrot God.
 
+{% hint style="info" %}
+To get all available Lucky Block name, get in SAB and execute this script.
+
+This will copy all of the lucky block's name to your clipboard.
+
+```lua
+local a=""for b,c in require(game.ReplicatedStorage.Datas.Animals)do if string.find(b,"Lucky Block")then a=a..b.."\n"end end;setclipboard(a)
+```
+{% endhint %}
+
 ## Open Lucky Block
 
 Opens the Lucky Blocks you list. Names must match exactly what you configured inside [Buy Lucky Block](misc.md#buy-lucky-block) (set the config just like the one above).
