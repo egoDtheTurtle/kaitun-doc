@@ -125,3 +125,8 @@ local a=""for b,c in require(game.ReplicatedStorage.Datas.Animals)do if string.f
 ## Open Lucky Block
 
 Opens the Lucky Blocks you list. Names must match exactly what you configured inside [Buy Lucky Block](misc.md#buy-lucky-block) (set the config just like the one above).
+
+## Rare Lucky Block
+
+Mark the Lucky Block in the list as [Rare Animal Generation](misc.md#rare-animal-generation) - which mean will never be sold or open if full base.\
+Names must match exactly what you configured inside [Buy Lucky Block](misc.md#buy-lucky-block) (set the config just like the one above).
