@@ -25,6 +25,9 @@ getgenv().Config = {
         },
         ["Buy Lucky Block"] = {},
         ["Open Lucky Block"] = {},
+        ["Rare Lucky Block"] = {
+            "Secret Lucky Block",
+        },
     },
     ["Performance"] = {
         ["FPS Cap"] = 10,
