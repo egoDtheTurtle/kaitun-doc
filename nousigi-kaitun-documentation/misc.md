@@ -112,6 +112,10 @@ Available names (not 100% real time up-to-dated):
 
 Set to `"All"` to buy every Lucky Block except Mythic and Brainrot God.
 
+```lua
+["Buy Lucky Block"] = "All",
+```
+
 {% hint style="info" %}
 To get all available Lucky Block name, get in SAB and execute this script.
 
